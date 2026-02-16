@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #dd9047;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+   align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+}
+
+#navbar-logo {
+  color: #7f0A1C;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+   cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: fantasy , Copperplate;
+}
+
+#navbar-logo img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links {
+  color: #7f0A1C;
+  text-decoration: none;
+}
+
+.button {
+  background: #EA2805;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-links{
+    color: #c74f5d ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 100%;
+}
+.navbar-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+}
+.button:hover{
+    background-color: #EA2805;
+    transition: all 0.3s ease;
+    border-radius: 20% 20% 20% 20%;
+}
+.navbar-links:hover{
+    background-color: #7f0A1C;
+    transition: all 0.3s ease;
+    border-radius: 20% 20% 20% 20%;
+}
+:root {
+  --primary-dark: #2c110a; 
+  --accent-gold: #dd9047;   
+  --soft-cream: #f8f5f2;   
+  --text-gray: #555;
+}
+
+.info-page {
+  background-color: var(--soft-cream);
+  color: var(--primary-dark);
+}
+
+.info-hero {
+  background: linear-gradient(rgba(44, 17, 10, 0.7), rgba(44, 17, 10, 0.7)), 
+              url('download (4).jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: var(--accent-gold);
+  margin: 15px auto;
+}
+
+.content-block { 
+    padding: 80px 15%; 
+    background-color: #dd9047;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.subtitle {
+  color: var(--accent-gold);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.text-side h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  color: var(--primary-dark);
+}
+
+.text-side p {
+  line-height: 1.8;
+  color: var(--text-gray);
+  font-size: 1.1rem;
+}
+
+.styled-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0px var(--accent-gold); 
+}
+
+.manager-highlight {
+  background: var(--primary-dark);
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.manager-card-premium {
+  background: rgb(255, 237, 237);
+  display: flex;
+  padding: 50px;
+  border-radius: 30px;
+  max-width: 900px;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+
+.m-img img {
+  width: 150px;
+  background: var(--soft-cream);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.m-text h3 { font-size: 2rem; color: var(--primary-dark); }
+.role { color: var(--accent-gold); font-weight: bold; }
+.m-text p {
+  font-style: italic;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: var(--accent-gold);
+}
+
+.contact-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background: #dd9047;
+  padding: 40px 10%;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--accent-gold);
+}
+
+.contact-item h4 { margin-bottom: 5px; }
+.footer{
+    font-size: 1.2rem;
+    background: #dd9047;
+    color: #444;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 40%;
+}
+@media (max-width: 768px) {
+  .info-grid { grid-template-columns: 1fr; text-align: center; }
+  .manager-card-premium { flex-direction: column; text-align: center; }
+  .styled-img { box-shadow: none; }
+}
